@@ -1,4 +1,4 @@
-# Compressed-Sensing-LLM
+# adaptive-sparse-language-model
 
 This repository is a PyTorch research prototype for a **adaptive-sparse-language-model**.
 
@@ -6,27 +6,6 @@ The project explores how ideas from **compressed sensing**, **sparse support rec
 
 This is not a production LLM runtime. It is a compact research prototype designed to test the main architectural idea in a controlled, CPU-friendly setting.
 
-## Relationship to the Reference Paper
-
-This repository is an independent research prototype inspired by the paper:
-
-**“Compressed-Sensing-Guided, Inference-Aware Structured Reduction for Large Language Models”**  
-Andrew J. Kiruluta, 2026.
-
-The paper proposes a framework where compressed-sensing-style measurements are used to recover sparse, task-conditioned, and token-adaptive execution supports for large language models. It also discusses joint prompt compression, structured subnetwork selection, uncertainty-driven sensing, and hardware-aware sparse execution.
-
-This repository does **not** claim to be the official implementation of the paper and does **not** reproduce the full large-scale system described there. Instead, it implements a small PyTorch prototype that explores selected ideas from the paper in a controlled synthetic benchmark.
-
-The implemented prototype includes:
-
-- task-conditioned measurement banks,
-- token-level sparse support prediction,
-- structured masks over attention heads and feed-forward blocks,
-- prompt compression through learned token keep probabilities,
-- uncertainty-driven adaptive measurement budgets,
-- support-recovery metrics using synthetic oracle supports.
-
-The implementation is intentionally small and CPU-friendly. It should be understood as an experimental learning prototype rather than a production LLM compression system.
 
 ## Project Motivation
 
