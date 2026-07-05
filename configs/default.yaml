@@ -1,0 +1,33 @@
+
+data:
+  data_dir: data/benchmark
+
+model:
+  vocab_size: 21
+  d_model: 32
+  n_layers: 2
+  n_heads: 4
+  ff_hidden: 32
+  n_ff_blocks: 4
+  max_seq_len: 32
+  prompt_keep_threshold: 0.5
+  active_heads: 2
+  active_ff_blocks: 2
+  measurement_max: 16
+  measurement_base: 8
+  measurement_min: 4
+  gamma_entropy: 0.6
+  n_tasks: 4
+
+train:
+  seed: 1234
+  batch_size: 64
+  epochs: 20
+  lr: 0.003
+  weight_decay: 0.01
+  grad_clip: 1.0
+  use_cuda: false
+  lambda_keep: 0.15
+  lambda_support: 0.25
+  lambda_temporal: 0.05
+  lambda_budget: 0.03
