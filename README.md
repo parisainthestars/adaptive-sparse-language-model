@@ -1,6 +1,6 @@
 # Compressed-Sensing-LLM
 
-This repository is a PyTorch research prototype for a **Compressed-Sensing-Guided Dynamic Language Model**.
+This repository is a PyTorch research prototype for a **adaptive-sparse-language-model**.
 
 The project explores how ideas from **compressed sensing**, **sparse support recovery**, and **adaptive measurement allocation** can be used to control the execution of a small causal language model. Instead of activating the same full model structure for every token and every task, the model learns a sparse, task-conditioned support over structured model components such as attention heads and feed-forward blocks.
 
