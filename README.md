@@ -239,16 +239,11 @@ The model therefore learns both token prediction and dynamic structured executio
 The total training loss combines several terms:
 
 $$
-\mathcal{L}_{\text{total}}
-=
-\mathcal{L}_{\text{LM}}
-+
-\lambda_{\text{keep}}\mathcal{L}_{\text{keep}}
-+
-\lambda_{\text{support}}\mathcal{L}_{\text{support}}
-+
-\lambda_{\text{temporal}}\mathcal{L}_{\text{temporal}}
-+
+\mathcal{L}_{\text{total}} =
+\mathcal{L}_{\text{LM}}+
+\lambda_{\text{keep}}\mathcal{L}_{\text{keep}}+
+\lambda_{\text{support}}\mathcal{L}_{\text{support}}+
+\lambda_{\text{temporal}}\mathcal{L}_{\text{temporal}}+
 \lambda_{\text{budget}}\mathcal{L}_{\text{budget}}.
 $$
 
