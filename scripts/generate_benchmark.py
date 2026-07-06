@@ -7,7 +7,6 @@ Creates the output directory if needed
 Generates examples for each split using a seeded RNG
 Saves each split as a JSONL file in the specified output folder
 '''
-# Andrew Kiruluta, UC Berkeley, May 2026
 import sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]

@@ -7,7 +7,6 @@ train_benchmark.py runs the model training pipeline using a YAML config.
 - Prints the returned training metrics as formatted JSON
 '''
 
-# Andrew Kiruluta, UC Berkeley, May 2026
 import argparse
 import json
 import sys

@@ -1,4 +1,3 @@
-# Andrew Kiruluta, UC Berkeley, May 2026
 import argparse
 import json
 import sys
