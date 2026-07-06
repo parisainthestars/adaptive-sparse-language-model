@@ -1,10 +1,12 @@
-# Compressed-Sensing-LLM
+# adaptive-sparse-language-model
 
-This repository is a PyTorch research prototype for a **Compressed-Sensing-Guided Dynamic Language Model**.
+This repository is a PyTorch research prototype for a **adaptive-sparse-language-model**.
+
 
 The project explores how ideas from **compressed sensing**, **sparse support recovery**, and **adaptive measurement allocation** can be used to control the execution of a small causal language model. Instead of activating the same full model structure for every token and every task, the model learns a sparse, task-conditioned support over structured model components such as attention heads and feed-forward blocks.
 
 This is not a production LLM runtime. It is a compact research prototype designed to test the main architectural idea in a controlled, CPU-friendly setting.
+
 
 ## Project Motivation
 
@@ -239,16 +241,11 @@ The model therefore learns both token prediction and dynamic structured executio
 The total training loss combines several terms:
 
 $$
-\mathcal{L}_{\text{total}}
-=
-\mathcal{L}_{\text{LM}}
-+
-\lambda_{\text{keep}}\mathcal{L}_{\text{keep}}
-+
-\lambda_{\text{support}}\mathcal{L}_{\text{support}}
-+
-\lambda_{\text{temporal}}\mathcal{L}_{\text{temporal}}
-+
+\mathcal{L}_{\text{total}} =
+\mathcal{L}_{\text{LM}}+
+\lambda_{\text{keep}}\mathcal{L}_{\text{keep}}+
+\lambda_{\text{support}}\mathcal{L}_{\text{support}}+
+\lambda_{\text{temporal}}\mathcal{L}_{\text{temporal}}+
 \lambda_{\text{budget}}\mathcal{L}_{\text{budget}}.
 $$
 
